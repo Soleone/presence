@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { config } from "@/app/data/config";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-      </div>
+    <main>
+      <header>
+        <h1 className="text-4xl font-bold text-center mt-8">{config.site.title}</h1>
+      </header>
     </main>
   );
 }
