@@ -25,10 +25,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Customization
 
-* `app/data/config.ts` for hardcoded strings like the website title or description
+* `/config.ts` for hardcoded strings like the website title or description
   * overwrite your navigation (link path and label)
 * Replace `app/favicon.ico` with your own fav icon that displays in the browser bar
 * Add your custom images to the `public` directory. You can create subfolders for your needs, e.g. `public/blog` for blog article images, just make sure to reference them within that path.
+
+### Extensions
+
+#### Games
+
+List of games or similar items.
+
+Configure list in `/config.ts` under `extensions` and then `games`.
 
 ## Deploy on Vercel
 
@@ -37,6 +45,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 ## Features
 
 - [x] Navigation
+- [ ] Games list
 
 ## Roadmap
 
