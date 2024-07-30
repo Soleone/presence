@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { config } from "../data/config";
+import { config } from "../config";
 import { usePathname } from "next/navigation";
 
 export default function Nav() {
