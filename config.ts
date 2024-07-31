@@ -5,9 +5,10 @@ export const config = {
   },
   navigation: [
     { path: "/", label: "Home" },
-    { path: "/portfolio", label: "Portfolio" },
     { path: "/games", label: "Games" },
-    { path: "/about", label: "About" },
+    // { path: "/about", label: "About" },
+    // { path: "/socials", label: "Socials" },
+    // { path: "/portfolio", label: "Portfolio" },
   ],
   extensions: {
     games: [
