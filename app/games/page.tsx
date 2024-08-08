@@ -1,5 +1,5 @@
-import Games from "@/components/Games";
+import Releases from "@/components/Releases";
 
-export default function GamesList() {
-  return <Games />
+export default function Games() {
+  return <Releases />
 }

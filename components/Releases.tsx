@@ -7,8 +7,11 @@ function Hype({ hype }: { hype: number }) {
   );
 };
 
-export default function Games() {
+export default function Releases() {
   const formatDate = (date: string) => {
+    if (date.match(/^\d{4}$/)) {
+      return date;
+    }
     const options: Intl.DateTimeFormatOptions = { month: 'short', day: '2-digit', year: 'numeric' };
     return new Date(date).toLocaleDateString(undefined, options);
   };
@@ -16,11 +19,11 @@ export default function Games() {
   return (
     <section>
       <p className='text-center mb-8 text-gray-300 text-sm'>
-        Games coming out this year I am interested in.
+        {config.extensions.releases.description}
       </p>
 
-      <div className='grid grid-cols-1 md:grid-cols-4 gap-y-8'>
-        {config.extensions.games.map(({ title, description, date, image, hype }) => (
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-y-8 gap-x-4'>
+        {config.extensions.releases.titles.map(({ title, description, date, image, hype }) => (
           <div key={title} className="flex flex-col items-center gap-2 group">
             <h2 className="font-bold text-lg">{title}</h2>
             <Image src={image} alt={title} isHoverable isClickable classNames='object-contain h-64 w-full' />
