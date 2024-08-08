@@ -1,5 +1,5 @@
 import NextImage from 'next/image';
-import cl from 'clsx';
+import cn from '@/lib/utils';
 
 interface ImageProps {
   src: string;
@@ -13,7 +13,7 @@ interface ImageProps {
 
 export default function Image({ src, alt, width, height, isClickable = false, isHoverable = false, classNames }: ImageProps) {
   const isExternalSource = src.startsWith("http");
-  const finalClassNames = cl(
+  const finalClassNames = cn(
     classNames,
     isHoverable && 'hover:scale-105',
     isClickable && 'cursor-pointer',
