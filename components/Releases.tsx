@@ -1,5 +1,10 @@
 import { config } from '@/config';
 import Image from '@/components/Image';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
 function Hype({ hype }: { hype: number }) {
   return (
@@ -38,7 +43,19 @@ export default function Releases() {
           <div key={title} className="flex flex-col items-center gap-2">
             <h2 className="font-bold text-md">{title}</h2>
             <p className="text-sm">{formatDate(date)}</p>
-            <Image src={image} alt={title} isHoverable isClickable classNames='object-contain h-64 w-full' />
+            <Popover>
+              <PopoverTrigger>
+                <Image src={image} alt={title} isHoverable isClickable classNames='object-contain h-64 w-full' />
+              </PopoverTrigger>
+              <PopoverContent>
+                <div className="fixed inset-0 flex items-center justify-center z-50">
+                  <div className="bg-white p-2 rounded-md">
+                    <Image src={image} alt={title} classNames='object-contain h-full w-full' />
+                  </div>
+                </div>
+              </PopoverContent>
+            </Popover>
+
             <Hype hype={hype} />
             <p className="text-sm text-gray-300 h-12 text-center mt-2">{description}</p>
           </div>
