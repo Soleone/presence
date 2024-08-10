@@ -27,7 +27,6 @@ export default function Releases() {
         {config.extensions.releases.titles.map(({ title, description, date, image, hype }) => (
           <div key={title} className="flex flex-col items-center gap-2">
             <h2 className="font-bold text-md leading-none">{title}</h2>
-            <p className="text-sm">{formatDate(date)}</p>
             <Popover>
               <PopoverTrigger>
                 <Image src={image} alt={title} isHoverable isClickable classNames='object-contain h-64 w-full' />
@@ -41,7 +40,8 @@ export default function Releases() {
               </PopoverContent>
             </Popover>
 
-            <Rating score={hype} className="mt-2" />
+            <p className="text-sm ">{formatDate(date)}</p>
+            <Rating score={hype} className="mt-1" />
             <p className="text-sm text-gray-300 h-12 text-center">{description}</p>
           </div>
         ))}
