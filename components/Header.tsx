@@ -1,5 +1,5 @@
 import { config } from "../config";
-import Image from '@/components/Image';
+import Image from '@/components/lib/Image';
 
 export default function Header() {
   return (

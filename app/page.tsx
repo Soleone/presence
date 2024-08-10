@@ -4,6 +4,7 @@ import { config } from "@/config";
 export default function Home() {
   return (
     <main>
+      Test
     </main>
   );
 }
