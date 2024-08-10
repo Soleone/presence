@@ -2,10 +2,10 @@ import { config } from '@/config';
 import Image from '@/components/lib/Image';
 import Rating from '@/components/lib/Rating';
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 const formatDate = (date: string) => {
   if (date.match(/^\d{4}$/)) {
@@ -27,18 +27,18 @@ export default function Releases() {
         {config.extensions.releases.titles.map(({ title, description, date, image, hype }) => (
           <div key={title} className="flex flex-col items-center gap-2">
             <h2 className="font-bold text-md leading-none">{title}</h2>
-            <Popover>
-              <PopoverTrigger>
+            <Dialog>
+              <DialogTrigger>
                 <Image src={image} alt={title} isHoverable isClickable classNames='object-contain h-64 w-full' />
-              </PopoverTrigger>
-              <PopoverContent>
+              </DialogTrigger>
+              <DialogContent>
                 <div className="fixed inset-0 flex items-center justify-center z-50">
                   <div className="bg-white p-2 rounded-md">
                     <Image src={image} alt={title} classNames='object-contain h-full w-full' />
                   </div>
                 </div>
-              </PopoverContent>
-            </Popover>
+              </DialogContent>
+            </Dialog>
 
             <p className="text-sm ">{formatDate(date)}</p>
             <Rating score={hype} className="mt-1" />
