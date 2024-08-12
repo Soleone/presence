@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'dark')}>
+      <body className={cn(inter.className, '')}>
         <Header />
         <Nav />
         <div className="mt-8">

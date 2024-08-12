@@ -19,7 +19,7 @@ export default function Releases() {
 
   return (
     <section>
-      <p className='text-center mb-8 text-gray-300 text-sm'>
+      <p className='text-center mb-8 dark:text-gray-200 text-gray-700 text-sm'>
         {config.extensions.releases.description}
       </p>
 
@@ -42,7 +42,7 @@ export default function Releases() {
 
             <p className="text-sm ">{formatDate(date)}</p>
             <Rating score={hype} className="mt-1" />
-            <p className="text-sm text-gray-300 h-12 text-center">{description}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 h-12 text-center">{description}</p>
           </div>
         ))}
       </div>
