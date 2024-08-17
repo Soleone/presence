@@ -30,7 +30,7 @@ export default function Nav() {
   return (
     <nav className="text-center flex gap-4 justify-center mt-4">
       {config.navigation.map(({ path, label }) => (
-        <Link className={cn(pathname == path ? 'border-b' : '', 'hover:border-b')} key={path} href={path}>{label}</Link>
+        <Link className={cn(pathname == path ? 'border-b' : '', cn('hover:border-b', theme === 'light' ? 'border-slate-700' : 'border-slate-300'))} key={path} href={path}>{label}</Link>
       ))}
 
       <button onClick={toggleTheme} className="flex items-center gap-2">

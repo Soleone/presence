@@ -53,7 +53,7 @@ export const config = {
           title: "The Legend of Zelda: Echoes of Wisdom",
           date: "2024-09-26",
           description: "A new take on Zelda where we get to play as the princess.",
-          image: "https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/448638547_906383094866034_4463467649343463158_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nWKh3Ld0NpAQ7kNvgHCHqjH&_nc_ht=scontent-yyz1-1.xx&oh=00_AYDpMaXaOlsymOfinV4JMK6MEH1DDmaiG7Q49_550xOGMg&oe=66B9EB20",
+          image: "https://m.media-amazon.com/images/I/81Qd2ZX+ysL._AC_SL1500_.jpg",
           hype: 3,
         },
         {
