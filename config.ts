@@ -19,7 +19,8 @@ export const config = {
           date: "2024-08-20",
           description: "A Chinese Souls-like with impressive graphics.",
           image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd272d39-bad1-470b-bc82-4f8f4e9c4d79/dgxfwcl-c1b637ca-2d10-40bb-a737-306ba1824fd5.png/v1/fill/w_788,h_1014,q_70,strp/black_myth_wukong_box_art_by_watashiiz_dgxfwcl-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM2MSIsInBhdGgiOiJcL2ZcL2ZkMjcyZDM5LWJhZDEtNDcwYi1iYzgyLTRmOGY0ZTljNGQ3OVwvZGd4ZndjbC1jMWI2MzdjYS0yZDEwLTQwYmItYTczNy0zMDZiYTE4MjRmZDUucG5nIiwid2lkdGgiOiI8PTEwNTcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.0t16ur4RfkUhPsXdRMvD25tfZxkdU3L_ep1ktrBMS50",
-          hype: 3
+          hype: 3,
+          score: 9,
         },
         {
           title: "Visions of Mana",
@@ -34,6 +35,7 @@ export const config = {
           description: "Ubisoft open world Star Wars game.",
           image: "https://m.media-amazon.com/images/I/81hwIlt5jpL._AC_UF1000,1000_QL80_.jpg",
           hype: 3,
+          score: 7,
         },
         {
           title: "Astro Bot",
@@ -41,6 +43,7 @@ export const config = {
           description: "Polished 3D platformer with hopefully lots of variety.",
           image: "https://m.media-amazon.com/images/I/81dMTwn-GAL._AC_SL1500_.jpg",
           hype: 2,
+          score: 9,
         },
         {
           title: "Warhammer 40,000: Space Marine 2",

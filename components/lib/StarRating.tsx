@@ -8,7 +8,7 @@ function Star({ color }: { color: string }) {
   )
 }
 
-export default function Rating({ score, className }: { score: number, className: string }) {
+export default function StarRating({ score, className }: { score: number, className: string }) {
   return (
     <div className={cn('flex', className)}>
       {Array.from({ length: score }, (_, index) => (

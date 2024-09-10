@@ -1,6 +1,7 @@
 import { config } from '@/config';
 import Image from '@/components/lib/Image';
-import Rating from '@/components/lib/Rating';
+import StarRating from '@/components/lib/StarRating';
+import Score from '@/components/lib/Score';
 import {
   Dialog,
   DialogContent,
@@ -24,7 +25,7 @@ export default function Releases() {
       </p>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-8 gap-x-4 p-4'>
-        {config.extensions.releases.titles.map(({ title, description, date, image, hype }) => (
+        {config.extensions.releases.titles.map(({ title, description, date, image, hype, score }) => (
           <div key={title} className="flex flex-col items-center gap-2">
             <h2 className="font-bold text-md leading-none">{title}</h2>
             <Dialog>
@@ -41,11 +42,12 @@ export default function Releases() {
             </Dialog>
 
             <p className="text-sm ">{formatDate(date)}</p>
-            <Rating score={hype} className="mt-1" />
+            <StarRating score={hype} className="mt-1" />
             <p className="text-sm text-gray-700 dark:text-gray-300 h-12 text-center">{description}</p>
+            <Score score={score}></Score>
           </div>
         ))}
       </div>
-    </section>
+    </section >
   );
 };
