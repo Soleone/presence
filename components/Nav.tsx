@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { CiLight, CiDark } from 'react-icons/ci';
 import { useEffect, useState } from "react";
+import { DarkModeSwitch } from "@/components/ui/dark-mode-switch"
 
 export default function Nav() {
   const pathname = usePathname();
@@ -33,9 +34,7 @@ export default function Nav() {
         <Link className={cn(pathname == path ? 'border-b' : '', cn('hover:border-b', theme === 'light' ? 'border-slate-700' : 'border-slate-300'))} key={path} href={path}>{label}</Link>
       ))}
 
-      <button onClick={toggleTheme} className="flex items-center gap-2">
-        {theme === 'light' ? <CiDark className="w-5 h-5" /> : <CiLight className="w-5 h-5" />}
-      </button>
+      <DarkModeSwitch title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} checked={theme === 'dark'} onCheckedChange={toggleTheme} />
     </nav>
   );
 };
