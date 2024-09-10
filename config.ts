@@ -73,7 +73,7 @@ export const config = {
         {
           title: "Call of Duty: Black Ops 6",
           date: "2024-10-25",
-          description: "Interesting 80s conspiracy setting, could be an interesting short ride.",
+          description: "Interesting 80s conspiracy setting, could be a fun short ride.",
           image: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/06/call-of-duty-black-ops-6-tag-page-cover-art.jpg",
           hype: 2,
         },
