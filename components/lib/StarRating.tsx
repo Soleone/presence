@@ -10,7 +10,7 @@ function Star({ color }: { color: string }) {
 
 export default function StarRating({ score, className }: { score: number, className: string }) {
   return (
-    <div className={cn('flex', className)}>
+    <div className={cn('flex', className)} title="Hype level">
       {Array.from({ length: score }, (_, index) => (
         <Star key={index} color="text-yellow-300" />
       ))}

@@ -1,12 +1,12 @@
 import { config } from '@/config';
 import Image from '@/components/lib/Image';
 import StarRating from '@/components/lib/StarRating';
-import Score from '@/components/lib/Score';
 import {
   Dialog,
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { GameScoreBadge } from './ui/game-score-badge';
 
 const formatDate = (date: string) => {
   if (date.match(/^\d{4}$/)) {
@@ -43,8 +43,8 @@ export default function Releases() {
 
             <p className="text-sm ">{formatDate(date)}</p>
             <StarRating score={hype} className="mt-1" />
+            <GameScoreBadge score={score}></GameScoreBadge>
             <p className="text-sm text-gray-700 dark:text-gray-300 h-12 text-center">{description}</p>
-            <Score score={score}></Score>
           </div>
         ))}
       </div>
